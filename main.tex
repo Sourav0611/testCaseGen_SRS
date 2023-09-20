@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{float}
 \usepackage[a4paper, margin=2cm]{geometry}
 
 \begin{document}
@@ -33,4 +34,29 @@
     \texttt{\today}
 \end{titlepage}
 \pagebreak
+
+% Page 1
+\tableofcontents
+\vfill
+
+\begin{table}[H]
+    \begin{flushleft}
+        \Large\textbf{Revisions}
+    \end{flushleft}
+    \vspace{10pt}\normalsize
+    \def\arraystretch{1.2}
+    \centering
+    \setlength{\tabcolsep}{25pt}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Version & Primary Author(s) & Description of version & Date Completed\\
+        \hline\hline
+        0.0 & & & \\
+        \hline
+        & & & \\
+        \hline
+    \end{tabular}
+\end{table}
+\pagebreak
+
 \end{document}
