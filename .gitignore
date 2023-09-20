@@ -1,0 +1,12 @@
+# Ignore compiler-specific files
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# Ignore log files
+*.log
+
+# Ignore output pdf
+*.pdf
