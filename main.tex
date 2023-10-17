@@ -175,43 +175,84 @@ Requires an internet connection (Ethernet/WIFI).
 % =================================================================
 
 \section{Functional Requirements}
-\subsection{User Authentication and Authorization}
+
+\subsection{User Management}
+\subsubsection{User Registration and Authentication}
 \paragraph{}
-Users must be able to create accounts and log in.
-User roles (e.g., admin, tester, developer) should determine access to various features.
-Administrators can manage user roles and permissions.
+Users can register accounts and authenticate securely.
+
+\subsubsection{User Roles and Permissions}
+\paragraph{}
+The system supports user roles (admin, tester, developer) with varying access levels.
+
+\subsubsection{User Profile Management}
+\paragraph{}
+Users can update personal information and preferences.
 
 \subsection{Test Case Generation}
+\subsubsection{Customizable Parameters}
 \paragraph{}
-Users should be able to define test case generation parameters, such as input data,
-constraints, and coverage criteria. The software must generate test cases based on the
-specified criteria. Users can trigger test case generation manually or automatically
-through integration with CI/CD pipelines.
+Users define test case generation parameters, including input data, constraints, and
+coverage criteria.
+
+\subsubsection{Multiple Coverage Criteria}
+\paragraph{}
+The software supports various coverage criteria, such as code coverage and branch coverage.
+
+\subsubsection{Manual and Automated Generation}
+\paragraph{}
+Test case generation can be triggered manually or integrated into automated processes.
+
+\subsubsection{Random and Deterministic Options}
+\paragraph{}
+Users can choose between random and deterministic test case generation methods.
 
 \subsection{Test Case Review and Approval}
+\subsubsection{Test Case Review}
 \paragraph{}
-If applicable, users can review and approve generated test cases before execution.\\
-Test cases can be marked as approved or rejected.
+Users can review generated test cases individually or in batches.
 
-\subsection{Test Case Export}
+\subsubsection{Approval Workflow}
 \paragraph{}
-Users can export generated test cases in common formats (e.g., CSV, JSON, XML).\\
-Exported test cases must include detailed information about the test case scenarios.
+An approval workflow allows users to approve or reject test cases based on predefined criteria.
 
-\subsection{Data Import and Integration}
+\subsection{Data Import and Export}
+\subsubsection{Data Import}
 \paragraph{}
-Support for importing existing test data and test case templates from various sources (e.g., files, databases).\\
-Integration with other test management or test automation tools through APIs.
+The system supports the import of existing test data and test case templates from various
+sources, including files and databases.
+
+\subsubsection{Data Export}
+\paragraph{}
+Users can export generated test cases in various formats (CSV, JSON, XML).
+
+\subsubsection{Integration with Test Management Tools}
+\paragraph{}
+Test case generator integrates with external test management tools through APIs.
+
+\subsection{Integration and Automation}
+\subsubsection{CI/CD Integration}
+\paragraph{}
+The software can be integrated into CI/CD pipelines to automate test case generation.
+
+\subsubsection{Webhooks and Event Triggers}
+\paragraph{}
+Users can trigger test case generation and events through webhooks and events.
 
 \subsection{Command-Line Interface (CLI)}
+\subsubsection{Feature Parity}
 \paragraph{}
-Provide a command-line interface for users who prefer working in a terminal environment.\\
-CLI must offer the same functionality as the graphical user interface.
+The CLI provides feature parity with the web-based UI, enabling scripted and
+automated test case generation tasks.
 
-\subsection{Error Handling}
+\subsection{Error Handling and Reporting}
+\subsubsection{Comprehensive Error Handling}
 \paragraph{}
-The system should gracefully handle errors and provide informative error messages to users.
-Errors should be logged for debugging purposes.
+The system handles errors gracefully and provides informative error messages to users.
+
+\subsubsection{Logging}
+\paragraph{}
+Errors and system events are logged for debugging and troubleshooting.
 
 % =================================================================
 
