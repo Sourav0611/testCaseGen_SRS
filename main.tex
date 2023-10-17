@@ -160,104 +160,104 @@ Requires an internet connection (Ethernet/WIFI).
 
 % =================================================================
 
-\section{Functional Requirements:}
-\subsection{User Authentication and Authorization:}
+\section{Functional Requirements}
+\subsection{User Authentication and Authorization}
 \paragraph{}
 Users must be able to create accounts and log in.
 User roles (e.g., admin, tester, developer) should determine access to various features.
 Administrators can manage user roles and permissions.
 
-\subsection{Test Case Generation:}
+\subsection{Test Case Generation}
 \paragraph{}
 Users should be able to define test case generation parameters, such as input data,
 constraints, and coverage criteria. The software must generate test cases based on the
 specified criteria. Users can trigger test case generation manually or automatically
 through integration with CI/CD pipelines.
 
-\subsection{Test Case Review and Approval:}
+\subsection{Test Case Review and Approval}
 \paragraph{}
 If applicable, users can review and approve generated test cases before execution.\\
 Test cases can be marked as approved or rejected.
 
-\subsection{Test Case Export:}
+\subsection{Test Case Export}
 \paragraph{}
 Users can export generated test cases in common formats (e.g., CSV, JSON, XML).\\
 Exported test cases must include detailed information about the test case scenarios.
 
-\subsection{Data Import and Integration:}
+\subsection{Data Import and Integration}
 \paragraph{}
 Support for importing existing test data and test case templates from various sources (e.g., files, databases).\\
 Integration with other test management or test automation tools through APIs.
 
-\subsection{Command-Line Interface (CLI):}
+\subsection{Command-Line Interface (CLI)}
 \paragraph{}
 Provide a command-line interface for users who prefer working in a terminal environment.\\
 CLI must offer the same functionality as the graphical user interface.
 
-\subsection{Error Handling:}
+\subsection{Error Handling}
 \paragraph{}
 The system should gracefully handle errors and provide informative error messages to users.
 Errors should be logged for debugging purposes.
 
 % =================================================================
 
-\section{Non-Functional Requirements:}
-\subsection{Performance:}
+\section{Non-Functional Requirements}
+\subsection{Performance}
 \paragraph{}
 Response times for test case generation and API requests should meet defined performance
 standards. The software should support multiple concurrent users without significant
 performance degradation.
 
-\subsection{Scalability:}
+\subsection{Scalability}
 \paragraph{}
 The system must be able to scale horizontally to accommodate increasing workloads.
 It should be able to handle a growing number of users and generated test cases.
 
-\subsection{Security:}
+\subsection{Security}
 \paragraph{}
 Data transmission must be encrypted using SSL/TLS to protect sensitive information.
 User authentication and authorization mechanisms should be robust and secure.
 Regular security audits and vulnerability assessments should be conducted.
 
-\subsection{Data Privacy:}
+\subsection{Data Privacy}
 \paragraph{}
 The software should comply with relevant data privacy regulations (e.g., GDPR, HIPAA) if applicable.
 Implement data anonymization and encryption where necessary.
 
-\subsection{Accessibility:}
+\subsection{Accessibility}
 \paragraph{}
 The user interface must be accessible to users with disabilities and compliant with accessibility standards (e.g., WCAG).
 
-\subsection{Reliability:}
+\subsection{Reliability}
 \paragraph{}
 The software should be highly reliable, with minimal downtime.
 Implement mechanisms for data backup and recovery in case of system failures.
 
-\subsection{Compatibility:}
+\subsection{Compatibility}
 \paragraph{}
 Ensure compatibility with a wide range of web browsers (e.g., Chrome, Firefox, Safari, Edge).
 Verify compatibility with different operating systems (e.g., Windows, macOS, Linux).
 
-\subsection{Internationalization (i18n) and Localization (l10n):}
+\subsection{Internationalization (i18n) and Localization (l10n)}
 \paragraph{}
 Support multiple languages and locales in the user interface.
 Format dates, times, and numbers according to the user's locale.
 
-\subsection{Documentation:}
+\subsection{Documentation}
 \paragraph{}
 Provide comprehensive user and developer documentation.
 Keep documentation up to date and easily accessible.
 
-\subsection{User Support:}
+\subsection{User Support}
 \paragraph{}
 Offer channels for user support and feedback, such as email, chat, or a helpdesk system.
 Ensure timely responses to user inquiries and issues.
 
-\subsection{Regulatory Compliance:}
+\subsection{Regulatory Compliance}
 \paragraph{}
 Comply with industry-specific regulations and standards, where applicable (e.g., ISO 9001 for quality management).
 
-\subsection{Usability:}
+\subsection{Usability}
 \paragraph{}
 The user interface should be intuitive and user-friendly.
 Conduct user testing to gather feedback for usability improvements.
@@ -265,48 +265,48 @@ Conduct user testing to gather feedback for usability improvements.
 % =================================================================
 
 \section{Product Convention}
-\subsection{Project Naming Convention:}
+\subsection{Project Naming Convention}
 \paragraph{}
 Choose a clear and concise name for the project, avoiding special characters or spaces.
 Use camelCase or snake\_case for multi-word project names.
 Example\: testCaseGenerator or test\_case\_generator
 
-\subsection{Versioning:}
+\subsection{Versioning}
 \paragraph{}
 Follow Semantic Versioning (SemVer) for version numbers (e.g., MAJOR.MINOR.PATCH).
 Start with version 1.0.0 for the initial release.
 
-\subsection{Coding Standards:}
+\subsection{Coding Standards}
 Follow a consistent coding style guide (e.g., PEP 8 for Python, or the appropriate
 language-specific guide). Use meaningful variable and function names for improved
 code readability.
 
-\subsection{Documentation:}
+\subsection{Documentation}
 \paragraph{}
 Provide detailed documentation for installation, usage, and maintenance.Use a
 documentation generator tool (e.g., Sphinx or Doxygen) for creating user and developer
 documentation.
 
-\subsection{Testing and Test Cases:}
+\subsection{Testing and Test Cases}
 \begin{itemize}
     \item Implement unit tests to ensure code reliability.
     \item Maintain a separate test suite or directory.
     \item Create and document sample test cases for end-users.
 \end{itemize}
 
-\subsection{Source Code Management:}
+\subsection{Source Code Management}
 \begin{itemize}
     \item Use a version control system (e.g., Git).
     \item Host the project repository on a platform like GitHub or GitLab.
     \item Adhere to a branching strategy (e.g., feature branching).
 \end{itemize}
 
-\subsection{Licensing:}
+\subsection{Licensing}
 \paragraph{}
 Choose an appropriate open-source license (e.g., MIT, Apache License, or GPL) and
 include it in your project's repository.
 
-\subsection{Dependencies and Package Management:}
+\subsection{Dependencies and Package Management}
 Use a package manager (e.g., pip for Python) to manage project dependencies.
 Include a requirements.txt file to specify required packages and their versions.
 Error Handling and Logging:
@@ -315,52 +315,52 @@ Error Handling and Logging:
     \item Use logging libraries for debugging and error reporting.
 \end{itemize}
 
-\subsection{Security:}
+\subsection{Security}
 \begin{itemize}
     \item Regularly update dependencies to patch known vulnerabilities.
     \item Perform security audits and code reviews periodically.
 \end{itemize}
 
-\subsection{User Interface (UI) Guidelines:}
+\subsection{User Interface (UI) Guidelines}
 \begin{itemize}
     \item If the software includes a UI, adhere to design and usability guidelines.
     \item Ensure cross-browser and cross-platform compatibility.
 \end{itemize}
 
-\subsection{Performance Optimization:}
+\subsection{Performance Optimization}
 \begin{itemize}
     \item Continuously monitor and optimize software performance.
     \item Profile code to identify and address bottlenecks.
 \end{itemize}
 
-\subsection{Release and Deployment:}
+\subsection{Release and Deployment}
 \begin{itemize}
     \item Follow a deployment strategy (e.g., continuous integration/continuous
         deployment) to streamline releases.
     \item Document the release process and maintain release notes.
 \end{itemize}
 
-\subsection{User Support and Feedback:}
+\subsection{User Support and Feedback}
 \begin{itemize}
     \item Establish channels for user feedback and support.
     \item Respond promptly to user inquiries and issues.
 \end{itemize}
 
-\subsection{Quality Assurance:}
+\subsection{Quality Assurance}
 \begin{itemize}
     \item Implement code review processes to maintain code quality.
     \item Use automated code analysis tools (e.g., linters, static analyzers) where applicable.
 \end{itemize}
 
-\subsection{Code Repository Structure:}
+\subsection{Code Repository Structure}
 \paragraph{}
 Organize code, documentation, and related files into a structured directory layout for easy navigation.
 
-\subsection{Contributor Guidelines:}
+\subsection{Contributor Guidelines}
 \paragraph{}
 If the project is open source, provide contribution guidelines for external contributors.
 
-\subsection{Continuous Improvement:}
+\subsection{Continuous Improvement}
 \paragraph{}
 Encourage continuous improvement through retrospectives and feedback loops.
 
