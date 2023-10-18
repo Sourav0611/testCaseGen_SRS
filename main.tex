@@ -276,16 +276,21 @@ Errors and system events are logged for debugging and troubleshooting.
 % =================================================================
 
 \section{Non-Functional Requirements}
-\subsection{Performance}
+\subsection{Performance and Scalability}
+\subsubsection{Response Times}
 \paragraph{}
-Response times for test case generation and API requests should meet defined performance
-standards. The software should support multiple concurrent users without significant
+The system maintains acceptable response times for user interactions and API calls.
+The software should support multiple concurrent users without significant
 performance degradation.
 
-\subsection{Scalability}
+\subsubsection{Scalability}
 \paragraph{}
-The system must be able to scale horizontally to accommodate increasing workloads.
+The system scales horizontally to accommodate increased workloads.
 It should be able to handle a growing number of users and generated test cases.
+
+\subsubsection{Load Testing}
+\paragraph{}
+Load testing is performed to assess performance under heavy loads.
 
 \subsection{Security}
 \paragraph{}
